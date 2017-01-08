@@ -11,8 +11,14 @@ public class ServerRunner{
 			//Displaying console message providing instructions for user
 			System.out.println("\nPlease provide:" 
 					+ "\nPort Number[Integer] and File Path[String]");
-			port = Integer.parseInt(args[0]);
-			filePath = args[1];
+			
+			//For some reason it doesn't want to work now when I try to pass data trough args, but works when i provide the data..
+			
+			//port = Integer.parseInt(args[0]);
+			//filePath = args[1];
+			
+			port = 7777;
+			filePath = "./downloads/"; 
 		}//try
 		
 		catch(Exception e) {
